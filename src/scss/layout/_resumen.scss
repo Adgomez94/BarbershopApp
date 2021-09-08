@@ -1,0 +1,38 @@
+.container-resume {
+  margin-bottom: $space /2 0;
+  p {
+    margin-bottom: .5rem;
+    span {
+      font-weight: $bold;
+      color: $blue;
+      font-size: 2.4rem;
+    }
+
+  }
+
+  .resumen-services {
+
+    h3{
+      margin: $space/2 0
+    }
+
+    .services {
+
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #43453c;
+
+      .price {
+        font-size: 2.4rem;
+        font-weight: $bold;
+        color: $blue
+      }
+
+    }
+  
+
+  }
+
+
+
+}

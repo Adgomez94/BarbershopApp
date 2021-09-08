@@ -1,0 +1,38 @@
+.form{
+  width: 100%;
+}
+
+.group-section{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  label{
+    flex: 0 0 10rem;
+    color:$white;
+  }
+  input{
+    flex: 1;
+    padding: $space / 4;
+    border-radius: 1rem;
+    border:none
+
+  }
+  .container-resume{
+    text-align: center;
+    margin: $space/2 0;
+    text-transform: uppercase;
+  }
+}
+
+.alert {
+  padding: $space / 2;
+  text-align: center;
+  color: $white;
+  width: 100%;
+  display: block;
+
+  &.error{
+    background-color: rgb(194, 0, 0);
+  }
+}

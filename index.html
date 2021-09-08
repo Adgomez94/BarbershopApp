@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Salón de Belleza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image"></div>
+        <div class="app">
+            <header class="header">
+                <h1>App Peluqueria</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-pass="1">Servicios</button>
+                <button type="button" data-pass="2">Información Cliente</button>
+                <button type="button" data-pass="3">Resumen</button>
+            </nav>
+            <!-- Inciia contenido -->
+            <div id="pass-1" class="section">
+                <h2>Servicio</h2>
+                <p class="text-center">Elige tus Servicios a Continuacion</p>
+                <div id="services" class="list-service">
+
+                </div>
+            </div>
+            <div id="pass-2" class="section">
+                <h2>Tus datos y Citas</h2>
+                <p class="text-center">Colocar tus datos y fecha de tu cita</p>
+                <form class="form">
+                    <div class="group-section">
+                        <label for="name">Nombre</label>
+                        <input 
+                            id="name"
+                            type="text" 
+                            placeholder="Tu nombre"
+                        >
+                    </div>
+                    <div class="group-section">
+                        <label for="date">Fecha</label>
+                        <input 
+                            id="date"
+                            type="date" 
+                        >
+                    </div>
+                    <div class="group-section">
+                        <label for="time">Hora</label>
+                        <input 
+                            id="time"
+                            type="time" 
+                        >
+                    </div>
+                </form>
+            </div>
+            <div id="pass-3" class="section container-resume">
+                <h2>Resumen</h2>
+            </div>
+            <div class="pagination">
+                <button id="previous">&laquo; Anterior</button>
+                <button id="next">Siguiente &raquo;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

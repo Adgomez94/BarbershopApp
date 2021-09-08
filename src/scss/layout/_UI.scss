@@ -1,0 +1,34 @@
+body {
+    background-color: $black;
+}
+
+.container {
+    @include tablet {
+        height: 100vh;
+        @include grid(2, 0);
+    }
+    .image {
+        height: 30rem;
+        background-image: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @include tablet {
+            height: auto;
+        }
+    }
+}
+
+.app {
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: $space / 2;
+    .section {
+        display: none;
+        margin-top: $space / 2;
+    }
+    .visible {
+        display: block;
+    }
+}
